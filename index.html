@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri Nugget Hunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="login-screen">
+            <h1>🥕 Nutri Nugget Hunt</h1>
+            <p>Preliminary Round | 15 Mins</p>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Full Name" required>
+                <input type="text" id="college" placeholder="College Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <button type="submit" class="btn">Start Quiz</button>
+            </form>
+        </div>
+
+        <div id="quiz-screen" class="hidden">
+            <div class="header-bar">
+                <span id="timer-display">⏱ 15:00</span>
+                <span id="progress-display">Q: 1/15</span>
+            </div>
+            <div id="question-container">
+                <h2 id="question-text">Question goes here...</h2>
+                <div id="options-container">
+                    </div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <h1>Quiz Completed! 🎉</h1>
+            <p id="score-message">Calculating...</p>
+            <p id="upload-status" style="font-size: 0.9em; color: gray;">Saving data...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
