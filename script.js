@@ -7,7 +7,7 @@ const questions = [
     { q: "Ref Body Weight (NIN 2020/24) for Indian Man & Woman?", o: ["60 kg & 50 kg", "65 kg & 55 kg", "70 kg & 60 kg", "60 kg & 55 kg"], a: "65 kg & 55 kg" },
     { q: "WHO: 'Free Sugars' should be less than what % of energy?", o: ["5%", "10%", "15%", "20%"], a: "5%" },
     { q: "NIN 2024: Cereal:Pulse ratio of 3:1 improves what?", o: ["Essential Fatty Acids", "Essential Amino Acids", "Complex Carbs", "Fiber"], a: "Essential Amino Acids" },
-    { q: "Best indicator for protein quality in research (Park)?", o: ["PER", "Net Protein Utilization (NPU)", "Biological Value", "Amino Acid Score"], a: "Net Protein Utilization (NPU)" },
+    { q: "Best indicator for protein quality in research?", o: ["PER", "Net Protein Utilization (NPU)", "Biological Value", "Amino Acid Score"], a: "Net Protein Utilization (NPU)" },
     { q: "Goiter Survey Recall Period?", o: ["Current Status", "Last 2 weeks", "Last 1 year", "Last 5 years"], a: "Current Status" },
     { q: "Deficiency associated with Bitot’s Spots?", o: ["Vit D", "Vit C", "Vit A", "Vit B12"], a: "Vit A" },
     { q: "Vit A dose for children 1-5 years (prevention)?", o: ["100,000 IU", "200,000 IU", "50,000 IU", "10,000 IU"], a: "200,000 IU" },
@@ -149,4 +149,5 @@ function startTimer(duration) {
         display.textContent = "⏱ " + minutes + ":" + seconds;
         if (--timer < 0) finishQuiz(); 
     }, 1000);
+
 }
